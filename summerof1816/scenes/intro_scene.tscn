@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2w4h7b0ggc7x"]
+
+[ext_resource type="Script" uid="uid://70qqtjrf0mcn" path="res://scripts/intro_scene.gd" id="1_0y5sa"]
+[ext_resource type="Texture2D" uid="uid://ccbdthgs0esws" path="res://game/assets/objects/background_map_title.png" id="2_gsw8x"]
+
+[sub_resource type="FontFile" id="FontFile_30vdr"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+
+[node name="intro_scene" type="CanvasLayer"]
+script = ExtResource("1_0y5sa")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1150.0
+offset_bottom = 641.0
+
+[node name="BackgroundMap" type="Sprite2D" parent="."]
+position = Vector2(577.5, 322)
+scale = Vector2(1.23052, 1.16667)
+texture = ExtResource("2_gsw8x")
+
+[node name="Intro" type="RichTextLabel" parent="."]
+offset_left = 206.0
+offset_top = 59.0
+offset_right = 964.0
+offset_bottom = 554.0
+theme_override_colors/default_color = Color(0.015195, 0.0842314, 0.140478, 1)
+theme_override_fonts/normal_font = SubResource("FontFile_30vdr")
+theme_override_font_sizes/normal_font_size = 40
+fit_content = true
+
+[node name="Welcome2" type="Button" parent="."]
+offset_left = 384.0
+offset_top = 396.0
+offset_right = 750.0
+offset_bottom = 479.0
+text = "Begin"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Welcome2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Welcome2" to="." method="_on_welcome_2_pressed"]

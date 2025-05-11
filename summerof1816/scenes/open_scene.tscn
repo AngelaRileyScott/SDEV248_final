@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://3uuuwanj7hjf"]
+
+[ext_resource type="Texture2D" uid="uid://bsssbydx6wcu5" path="res://game/assets/objects/background_map.png" id="1_30vdr"]
+[ext_resource type="Script" uid="uid://d36hnmqyv4oo" path="res://scripts/open_scene.gd" id="1_eckye"]
+
+[sub_resource type="FontFile" id="FontFile_30vdr"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+
+[node name="open_scene" type="CanvasLayer"]
+script = ExtResource("1_eckye")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1150.0
+offset_bottom = 641.0
+
+[node name="BackgroundMap" type="Sprite2D" parent="."]
+position = Vector2(577.5, 322)
+scale = Vector2(1.23052, 1.16667)
+texture = ExtResource("1_30vdr")
+
+[node name="Welcome" type="RichTextLabel" parent="."]
+offset_left = 206.0
+offset_top = 59.0
+offset_right = 964.0
+offset_bottom = 554.0
+theme_override_colors/default_color = Color(0.015195, 0.0842314, 0.140478, 1)
+theme_override_fonts/normal_font = SubResource("FontFile_30vdr")
+theme_override_font_sizes/normal_font_size = 40
+text = "In Kentucky, an interesting phenomenon is taking place. Summer is interrupted by winter and crops are destroyed in the snow and ice. Farmers and surveyors argue as to what is taking place. Follow John as he explores the Kentucky wilderness to discover its mysteries. Find clues to determine why 1816 is the Year Without a Summer."
+fit_content = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 608.0
+offset_top = 524.0
+offset_right = 974.0
+offset_bottom = 607.0
+text = "Click here to begin your adventure"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

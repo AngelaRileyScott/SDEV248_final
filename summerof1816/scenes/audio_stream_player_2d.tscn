@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://emj1y1bkhtuo"]
+
+[ext_resource type="AudioStream" uid="uid://fm0jhpoi741" path="res://game/assets/music/the-woodwind-song-11495.mp3" id="1_1udxr"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_1udxr")
+autoplay = true

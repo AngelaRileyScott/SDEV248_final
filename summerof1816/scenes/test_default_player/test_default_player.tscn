@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://c25u58wqfw7xh"]
+
+[ext_resource type="Script" uid="uid://ki3ktqtftste" path="res://scripts/menu_scene.gd" id="1_cbv4d"]
+[ext_resource type="PackedScene" uid="uid://c3x3mustedj75" path="res://tilesets/test_scene_tilemap.tscn" id="1_hjnj1"]
+[ext_resource type="PackedScene" uid="uid://bxfepa1sio0qq" path="res://scenes/characters/player/test_default_player.tscn" id="2_m3ily"]
+[ext_resource type="PackedScene" uid="uid://b6jtf1r2sjss0" path="res://scenes/farmer.tscn" id="3_nl5bo"]
+
+[node name="TestDefaultPlayer" type="Node2D"]
+script = ExtResource("1_cbv4d")
+
+[node name="TestSceneTilemap" parent="." instance=ExtResource("1_hjnj1")]
+position = Vector2(20, 20)
+
+[node name="TestDefaultPlayer" parent="." instance=ExtResource("2_m3ily")]
+position = Vector2(73, 94)
+
+[node name="farmer" parent="." instance=ExtResource("3_nl5bo")]
+position = Vector2(986, 521)

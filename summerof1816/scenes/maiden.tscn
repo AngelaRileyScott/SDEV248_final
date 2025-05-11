@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://hlx1by76llgx"]
+
+[ext_resource type="Texture2D" uid="uid://blixepfbemyj5" path="res://game/assets/characters/maiden_sprite_convert.png" id="1_k6kga"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12xtk"]
+atlas = ExtResource("1_k6kga")
+region = Rect2(0, 0, 62, 127)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpcdk"]
+atlas = ExtResource("1_k6kga")
+region = Rect2(127, 0, 62, 127)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6kga"]
+atlas = ExtResource("1_k6kga")
+region = Rect2(0, 0, 62, 127)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alytt"]
+atlas = ExtResource("1_k6kga")
+region = Rect2(127, 0, 62, 127)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_alytt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12xtk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpcdk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6kga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alytt")
+}],
+"loop": true,
+"name": &"message",
+"speed": 0.5
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wfocf"]
+size = Vector2(61, 130)
+
+[node name="Maiden" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_alytt")
+frame_progress = 0.237756
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_wfocf")
