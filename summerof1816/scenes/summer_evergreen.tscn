@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://db3imoodyolj2"]
+
+[ext_resource type="Texture2D" uid="uid://d1cl1xkpvacw6" path="res://game/assets/objects/summergreen.png" id="1_k3pxy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jfnwn"]
+size = Vector2(139, 73)
+
+[node name="SummerEvergreen" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_k3pxy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 73.5)
+shape = SubResource("RectangleShape2D_jfnwn")

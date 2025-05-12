@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2sn5iepboie2"]
+
+[ext_resource type="Texture2D" uid="uid://dvncs4eeh3kb0" path="res://game/assets/objects/chain.png" id="1_2um54"]
+[ext_resource type="Script" uid="uid://bkyd8ome8ua5x" path="res://scripts/chain_ui.gd" id="1_gkpme"]
+
+[node name="Chain_UI" type="CanvasLayer"]
+script = ExtResource("1_gkpme")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 9.0
+offset_top = 3.0
+offset_right = 49.0
+offset_bottom = 45.0
+texture = ExtResource("1_2um54")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 47.0
+offset_top = 4.0
+offset_right = 76.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0.0611117, 0.0391035, 0.0301251, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"

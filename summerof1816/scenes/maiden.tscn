@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://hlx1by76llgx"]
+[gd_scene load_steps=9 format=3 uid="uid://hlx1by76llgx"]
 
+[ext_resource type="Script" uid="uid://iuj10yybfnn3" path="res://scripts/maiden.gd" id="1_12xtk"]
 [ext_resource type="Texture2D" uid="uid://blixepfbemyj5" path="res://game/assets/characters/maiden_sprite_convert.png" id="1_k6kga"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_12xtk"]
@@ -47,10 +48,11 @@ animations = [{
 size = Vector2(61, 130)
 
 [node name="Maiden" type="CharacterBody2D"]
+script = ExtResource("1_12xtk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_alytt")
-frame_progress = 0.237756
+animation = &"message"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1)

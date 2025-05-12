@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://b6jtf1r2sjss0"]
+[gd_scene load_steps=8 format=3 uid="uid://b6jtf1r2sjss0"]
 
+[ext_resource type="Script" uid="uid://be63ky61b1o5j" path="res://scripts/farmer.gd" id="1_2qlof"]
 [ext_resource type="Texture2D" uid="uid://s2goeneuv1jc" path="res://game/assets/characters/farmer_sprite_convert.png" id="1_vltvv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2qlof"]
@@ -36,6 +37,7 @@ size = Vector2(42, 130)
 size = Vector2(75, 126)
 
 [node name="farmer" type="CharacterBody2D"]
+script = ExtResource("1_2qlof")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_7541a")

@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dftma4qxdlvxq"]
+[gd_scene load_steps=2 format=3 uid="uid://dftma4qxdlvxq"]
 
 [ext_resource type="Script" uid="uid://ki3ktqtftste" path="res://scripts/menu_scene.gd" id="1_o71fo"]
-[ext_resource type="Texture2D" uid="uid://bsssbydx6wcu5" path="res://game/assets/objects/background_map.png" id="2_6wmco"]
 
 [node name="menu_scene" type="CanvasLayer"]
 script = ExtResource("1_o71fo")
@@ -11,11 +10,6 @@ offset_left = 5.0
 offset_top = 3.0
 offset_right = 118.0
 offset_bottom = 88.0
-
-[node name="BackgroundMap" type="Sprite2D" parent="."]
-position = Vector2(61.5, 45.2498)
-scale = Vector2(0.114194, 0.144023)
-texture = ExtResource("2_6wmco")
 
 [node name="MenuButton" type="Button" parent="."]
 anchors_preset = -1

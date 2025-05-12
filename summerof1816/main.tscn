@@ -1,19 +1,63 @@
-[gd_scene load_steps=5 format=3 uid="uid://by7tatwnkfwl8"]
+[gd_scene load_steps=11 format=3 uid="uid://ccuuknqxncwqa"]
 
-[ext_resource type="PackedScene" uid="uid://b6jtf1r2sjss0" path="res://scenes/farmer.tscn" id="1_h2yge"]
-[ext_resource type="PackedScene" uid="uid://c3x3mustedj75" path="res://tilesets/test_scene_tilemap.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://bxfepa1sio0qq" path="res://scenes/characters/player/test_default_player.tscn" id="2_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://hlx1by76llgx" path="res://scenes/maiden.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://c3x3mustedj75" path="res://tilesets/test_scene_tilemap.tscn" id="1_7mycd"]
+[ext_resource type="PackedScene" uid="uid://b6jtf1r2sjss0" path="res://scenes/farmer.tscn" id="2_272bh"]
+[ext_resource type="PackedScene" uid="uid://bxfepa1sio0qq" path="res://scenes/characters/player/test_default_player.tscn" id="3_5vw27"]
+[ext_resource type="PackedScene" uid="uid://hlx1by76llgx" path="res://scenes/maiden.tscn" id="4_kek77"]
+[ext_resource type="PackedScene" uid="uid://dftma4qxdlvxq" path="res://scenes/menu_scene.tscn" id="5_4c57u"]
+[ext_resource type="PackedScene" uid="uid://v143ugp0v4o5" path="res://scenes/chain.tscn" id="6_efxa6"]
+[ext_resource type="PackedScene" uid="uid://db3imoodyolj2" path="res://scenes/summer_evergreen.tscn" id="7_5vw27"]
+[ext_resource type="PackedScene" uid="uid://dstrs1iyhwxro" path="res://scenes/summer_tree.tscn" id="8_kek77"]
+[ext_resource type="PackedScene" uid="uid://bcaqjnp08852f" path="res://scenes/winter_evergreen.tscn" id="9_4c57u"]
+[ext_resource type="PackedScene" uid="uid://cksr1gcrchuh1" path="res://scenes/winter_tree.tscn" id="10_efxa6"]
 
 [node name="Main" type="Node2D"]
 
-[node name="TestSceneTilemap" parent="." instance=ExtResource("1_ig7tw")]
+[node name="TestSceneTilemap" parent="." instance=ExtResource("1_7mycd")]
 
-[node name="farmer" parent="." instance=ExtResource("1_h2yge")]
-position = Vector2(1888, 473)
+[node name="farmer" parent="." instance=ExtResource("2_272bh")]
+position = Vector2(2316, 1021)
 
-[node name="TestDefaultPlayer" parent="." instance=ExtResource("2_1bvp3")]
-position = Vector2(45, 75)
+[node name="TestDefaultPlayer" parent="." instance=ExtResource("3_5vw27")]
+position = Vector2(163, 237)
 
-[node name="Maiden" parent="." instance=ExtResource("4_1bvp3")]
-position = Vector2(1988, -408)
+[node name="Maiden" parent="." instance=ExtResource("4_kek77")]
+position = Vector2(1961, -585)
+
+[node name="menu_scene" parent="." instance=ExtResource("5_4c57u")]
+
+[node name="chain" parent="." instance=ExtResource("6_efxa6")]
+position = Vector2(785, 290)
+
+[node name="SummerEvergreen" parent="." instance=ExtResource("7_5vw27")]
+position = Vector2(680, 158)
+
+[node name="SummerTree" parent="." instance=ExtResource("8_kek77")]
+position = Vector2(2, 226)
+
+[node name="chain2" parent="." instance=ExtResource("6_efxa6")]
+position = Vector2(-16, 363)
+
+[node name="chain3" parent="." instance=ExtResource("6_efxa6")]
+position = Vector2(2538, 1119)
+
+[node name="chain4" parent="." instance=ExtResource("6_efxa6")]
+position = Vector2(2147, -104)
+
+[node name="chain5" parent="." instance=ExtResource("6_efxa6")]
+position = Vector2(1089, 838)
+
+[node name="SummerEvergreen2" parent="." instance=ExtResource("7_5vw27")]
+position = Vector2(2269, 410)
+
+[node name="SummerEvergreen3" parent="." instance=ExtResource("7_5vw27")]
+position = Vector2(1332, 1073)
+
+[node name="SummerTree2" parent="." instance=ExtResource("8_kek77")]
+position = Vector2(2035, 525)
+
+[node name="WinterEvergreen" parent="." instance=ExtResource("9_4c57u")]
+position = Vector2(2116, -607)
+
+[node name="WinterTree" parent="." instance=ExtResource("10_efxa6")]
+position = Vector2(1709, -533)

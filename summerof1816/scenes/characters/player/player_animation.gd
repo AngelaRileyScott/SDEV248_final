@@ -1,4 +1,5 @@
 extends CharacterBody2D
+
 @onready var surveyor: AnimatedSprite2D = $AnimatedSprite2D
 #@onready var _animation_player = $AnimationPlayer
 

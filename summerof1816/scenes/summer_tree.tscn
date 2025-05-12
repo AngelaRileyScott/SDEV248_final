@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dstrs1iyhwxro"]
+
+[ext_resource type="Texture2D" uid="uid://brnxdn42v01hx" path="res://game/assets/objects/summertree.png" id="1_gwgdn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jfnwn"]
+size = Vector2(22, 88)
+
+[node name="SummerTree" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gwgdn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 66)
+shape = SubResource("RectangleShape2D_jfnwn")

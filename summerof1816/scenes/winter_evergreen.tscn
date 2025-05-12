@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcaqjnp08852f"]
+
+[ext_resource type="Texture2D" uid="uid://c23as54jp4rw8" path="res://game/assets/objects/wintergreen.png" id="1_cytne"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jfnwn"]
+size = Vector2(139, 82.5)
+
+[node name="WinterEvergreen" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cytne")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 70.75)
+shape = SubResource("RectangleShape2D_jfnwn")
